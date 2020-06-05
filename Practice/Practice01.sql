@@ -73,7 +73,7 @@ order by salary DESC;
 문제6.
 부서번호가 10, 90, 100 인 >where in
 직원의 이름, 월급, 입사일, 부서번호를 나타내시오 >select
-입사일은 1977-12 와 같이 표시하시오 >to_char
+입사일은 1977-12 와 같이 표시하시오. >to_char
 */
 SELECT first_name "이름",
        salary "월급",
