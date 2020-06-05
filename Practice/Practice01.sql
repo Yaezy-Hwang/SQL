@@ -100,9 +100,9 @@ OR    first_name like '%s%';
 전체 부서를 출력하려고 합니다.
 순서는 부서이름이 긴 순서대로 출력해 보세오. >order by, length
 */
-SELECT department_name "부서명"
-FROM departments
-order by length(department_name) DESC;
+SELECT *
+FROM jobs
+ORDER BY length(job_title) DESC;
 
 
 /*
