@@ -113,7 +113,14 @@ ORDER BY length(job_title) DESC;
 */
 SELECT upper(country_name) "³ª¶ó¸í"
 FROM countries
-order by country_name asc;
+where country_id in(
+    SELECT country_id
+    FROM locations
+    where location_id in(
+        SELECT location_id
+        FROM departments
+        )
+    );
 
 
 /*
